@@ -1,9 +1,14 @@
 {
-	"blocks": {
-		"templates": [
-			"circle-counter",
-			"flip",
-			"countdown"
-		]
-	}
+	"blocks":  [
+		"about-author",
+		"accordion",
+		"advanced-heading",
+		"businnes-hours",
+		"button-group",
+		"circle-counter",
+		"countdown",
+		"flip",
+		"progress-bar",
+		"tabs"
+	]
 }
