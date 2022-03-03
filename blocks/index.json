@@ -1,0 +1,9 @@
+{
+	"blocks": {
+		"templates": [
+			"circle-counter",
+			"flip",
+			"countdown"
+		]
+	}
+}
