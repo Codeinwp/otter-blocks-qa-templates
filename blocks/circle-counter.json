@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:themeisle-blocks/circle-counter {\"id\":\"wp-block-themeisle-blocks-circle-counter-a02eabd7\",\"percentage\":63,\"duration\":3,\"height\":128,\"fontSizeTitle\":69,\"fontSizePercent\":20,\"strokeWidth\":14,\"backgroundColor\":\"#eabef0\",\"progressColor\":\"#82d52f\",\"titleColor\":\"#bc2f2f\"} -->\n<div id=\"wp-block-themeisle-blocks-circle-counter-a02eabd7\" data-percentage=\"63\" data-duration=\"3\" data-height=\"128\" data-stroke-width=\"14\" data-font-size-percent=\"20\" data-background-stroke=\"#eabef0\" data-progress-stroke=\"#82d52f\" class=\"wp-block-themeisle-blocks-circle-counter\"><div class=\"wp-block-themeisle-blocks-circle-counter-title__area\"><span class=\"wp-block-themeisle-blocks-circle-counter-title__value\">Skill</span></div><div class=\"wp-block-themeisle-blocks-circle-counter__bar\"></div></div>\n<!-- /wp:themeisle-blocks/circle-counter -->"
+}

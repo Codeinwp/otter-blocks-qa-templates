@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:themeisle-blocks/progress-bar {\"id\":\"wp-block-themeisle-blocks-progress-bar-d68be1cf\",\"title\":\"Pills 錠剤\",\"percentage\":65,\"duration\":2.6,\"titleStyle\":\"highlight\",\"percentagePosition\":\"tooltip\",\"height\":52,\"borderRadius\":11,\"backgroundColor\":\"#ceb8b8\",\"barBackgroundColor\":\"#e03e3e\",\"titleColor\":\"#9bb58b\",\"percentageColor\":\"#2cd235\"} -->\n<div id=\"wp-block-themeisle-blocks-progress-bar-d68be1cf\" class=\"wp-block-themeisle-blocks-progress-bar has-tooltip\" data-percent=\"65\" data-duration=\"2.6\"><div class=\"wp-block-themeisle-blocks-progress-bar__area\"><div class=\"wp-block-themeisle-blocks-progress-bar__area__title highlight\"><span>Pills 錠剤</span></div><div class=\"wp-block-themeisle-blocks-progress-bar__area__bar\"><span class=\"wp-block-themeisle-blocks-progress-bar__area__tooltip\"><span class=\"wp-block-themeisle-blocks-progress-bar__number\">65</span><span class=\"wp-block-themeisle-blocks-progress-bar__area__arrow\"></span></span></div></div></div>\n<!-- /wp:themeisle-blocks/progress-bar -->"
+}
