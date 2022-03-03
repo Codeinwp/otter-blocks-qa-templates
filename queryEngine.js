@@ -1,10 +1,20 @@
 (() => {
+
+	const REGISTERED_SOURCES = {
+		"robert": "https://raw.githubusercontent.com/Soare-Robert-Daniel/otter-blocks-qa-templates/main/"
+	}
+
 	class QueryEngineQA {
 		constructor( sources ) {
 			this.sources = sources;
 			this.owner = '';
 			this.folder = 'blocks';
 			this.query = undefined;
+		}
+
+		addSource( source ) {
+			this.sources = { ...this.sources, source }
+			return this;
 		}
 
 		setOwner( owner ) {
@@ -54,16 +64,16 @@
 
 			const templateBlocks = index?.blocks
 				?.filter( blockSlug => {
-					if( query?.exclude && query?.exclude.includes( blockSlug ) ) {
+					if( this.query?.exclude && this.query?.exclude.includes( blockSlug ) ) {
 						return false;
 					}
 
-					if( query?.include && query?.include.includes( blockSlug ) ) {
+					if( this.query?.include && this.query?.include.includes( blockSlug ) ) {
 						return true;
 					}
 
 					// If include doesn't have a value, then all the blocks that are not excluded are valid 
-					return query.include === undefined;
+					return this.query.include === undefined;
 				})
 
 			const blocksContent = wp.data?.select( 'core/blocks' )?.getBlockTypes()
@@ -91,10 +101,10 @@
 				
 			Promise.all(blocksContent)
 				.then( ( templates ) => {
+					console.log(`Loaded: ${templates?.length} blocks!`)
 					templates.forEach( template => {
 						if( template.content ) {
 							const block = wp?.blocks?.parse(template?.content)
-							console.log(block)
 							if( block ) {
 								wp?.data?.dispatch('core/block-editor')?.insertBlocks(block)
 							}
@@ -107,6 +117,6 @@
 	console.log("Query Engine Script Loaded")
 	const global = window || globalThis;
 	global.QueryEngineQA = QueryEngineQA;
-	global.qaOtter = (new QueryEngineQA({ "robert": "https://raw.githubusercontent.com/Soare-Robert-Daniel/otter-blocks-qa-templates/main/" })).setOwner("robert")
+	global.qaOtter = (new QueryEngineQA(REGISTERED_SOURCES)).setOwner("robert")
 })()
 
