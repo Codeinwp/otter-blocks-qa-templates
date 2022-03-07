@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:themeisle-blocks/leaflet-map {\"id\":\"wp-block-themeisle-blocks-leaflet-map-78d6d78d\",\"location\":\"Barcelona\",\"latitude\":\"41.382862402745104\",\"longitude\":\"2.177352905273438\",\"bbox\":\"2.124996185302735,41.350268079308826,2.229709625244141,41.415440397070654\",\"zoom\":13,\"height\":506,\"markers\":[{\"id\":\"d5caf0fb-adbc-433d-a63e-54523c9c0967\",\"latitude\":41.40642835684362,\"longitude\":2.1782112121582036,\"title\":\"Barcelona\",\"description\":\"\\u003ch4\\u003eHey heee e\\u003c/h4\\u003e\"}]} /-->"
+}
