@@ -1,0 +1,22 @@
+{
+  "name": "Otter QA",
+  "description": "Basic tool for Otter QA testing",
+  "version": "0.1",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "test.html",
+    "default_icon": "icon-256x256.png"
+  },
+  "permissions": ["activeTab", "scripting"],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "run_at": "document_end",
+      "js": ["contentScript.js"]
+    }
+  ],
+  "web_accessible_resources": [{
+    "resources": ["queryEngine.js"],
+    "matches": ["<all_urls>"]
+  }]
+}

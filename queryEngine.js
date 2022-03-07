@@ -1,6 +1,4 @@
-(() => {
-
-	const REGISTERED_SOURCES = {
+const REGISTERED_SOURCES = {
 		"robert": "https://raw.githubusercontent.com/Soare-Robert-Daniel/otter-blocks-qa-templates/main/"
 	}
 
@@ -160,9 +158,12 @@
 		}
 
 	}
+
+function injectQueryEngine() {
 	console.log("Query Engine Script Loaded")
 	const global = window || globalThis;
 	global.QueryEngineQA = QueryEngineQA;
 	global.qaOtter = (new QueryEngineQA(REGISTERED_SOURCES)).setOwner("robert")
-})()
+}
 
+injectQueryEngine()
