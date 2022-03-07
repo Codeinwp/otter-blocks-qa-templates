@@ -12,9 +12,9 @@ Insert a Flip block.
 qaOtter.addQuery({ blocks: { include: ['flip'] } }).build().run()
 ```
 
-Insert all defined blocks in `blocks\index.json`.
+Insert all defined blocks from `blocks\index.json`.
 ```
 qaOtter.addQuery({}).build().run()
 ``` 
 
-:info: The Query Engine can be used without the extension. Just run the code from `queryEngine.js` in the Console. *You also use [Snippets](https://developer.chrome.com/docs/devtools/javascript/snippets/).*
+:information_source: The Query Engine can be used without the extension. Just run the code from `queryEngine.js` in the Console. *You also use [Snippets](https://developer.chrome.com/docs/devtools/javascript/snippets/).*
