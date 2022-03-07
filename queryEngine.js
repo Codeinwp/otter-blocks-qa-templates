@@ -13,7 +13,7 @@ const REGISTERED_SOURCES = {
 				return;
 			}
 
-			const { metadata } = this.query;
+			const { metadata, blocks } = this.query;
 
 	      	console.log("Run query!");
 			const mainPath = metadata.sources[metadata.owner] + metadata.path;
@@ -35,16 +35,16 @@ const REGISTERED_SOURCES = {
 
 			const templateBlocks = index?.blocks
 				?.filter( blockSlug => {
-					if( this.query?.exclude && this.query?.exclude.includes( blockSlug ) ) {
+					if( blocks?.exclude && blocks?.exclude.includes( blockSlug ) ) {
 						return false;
 					}
 
-					if( this.query?.include && this.query?.include.includes( blockSlug ) ) {
+					if( blocks?.include && blocks?.include.includes( blockSlug ) ) {
 						return true;
 					}
 
 					// If include doesn't have a value, then all the blocks that are not excluded are valid 
-					return this.query.include === undefined;
+					return blocks?.include === undefined;
 				})
 
 			const blocksContent = wp.data?.select( 'core/blocks' )?.getBlockTypes()
