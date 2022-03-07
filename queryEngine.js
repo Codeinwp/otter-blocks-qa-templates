@@ -4,48 +4,21 @@
 		"robert": "https://raw.githubusercontent.com/Soare-Robert-Daniel/otter-blocks-qa-templates/main/"
 	}
 
-	class QueryEngineQA {
-		constructor( sources ) {
-			this.sources = sources;
-			this.owner = '';
-			this.folder = 'blocks';
-			this.query = undefined;
-		}
-
-		addSource( source ) {
-			this.sources = { ...this.sources, source }
-			return this;
-		}
-
-		setOwner( owner ) {
-			this.owner = owner;
-			return this;
-		}
-
-		useBlocks() {
-			this.folder = 'blocks';
-			return this;
-		}
-
-		useTemplate() {
-			this.folder = 'templates';
-			return this;
-		}
-
-		useQuery(query) {
+	class QueryRunner {
+		constructor(query) {
 			this.query = query;
-			return this;
 		}
 
 		async run() {
-
 			if( this.query === undefined ) {
 				console.warn("The query is empty!");
 				return;
 			}
 
+			const { metadata } = this.query;
+
 	      	console.log("Run query!");
-			const mainPath = this.sources[this.owner] + this.folder;
+			const mainPath = metadata.sources[metadata.owner] + metadata.path;
 
 			const respIndex = await fetch(`${mainPath}/index.json`, {
 						method: 'GET',
@@ -60,7 +33,7 @@
 			}
 			const index = await respIndex.json();
 
-			console.log(index)
+			console.log(index, this.query)
 
 			const templateBlocks = index?.blocks
 				?.filter( blockSlug => {
@@ -83,18 +56,21 @@
 				.map( blockSlug => {
 					const path = `${mainPath}/${blockSlug}.json`;
 					return new Promise( (resolve, reject) => {
-						fetch(path, {
-							method: 'GET',
-							headers: {
-								'Accept': 'application/json'
-							}
-						})
-						.then((res)=>{ 
-								if(res.ok) return res.json(); 
-								else throw new Error("Status code error :" + res.status) 
-						})
-						.then(data=>resolve(data))
-						.catch(error=>reject(error))
+						setTimeout( () => {
+							fetch(path, {
+								method: 'GET',
+								headers: {
+									'Accept': 'application/json'
+								}
+							})
+							.then((res)=>{ 
+									if(res.ok) return res.json(); 
+									else throw new Error("Status code error :" + res.status) 
+							})
+							.then(data=>resolve(data))
+							.catch(error=>reject(error))
+						}, Math.floor(Math.random() * 10) * 10);
+						
 					})
 				})
 				
@@ -112,7 +88,77 @@
 					})
 				})
 				.catch( err => console.warn(err) )
+		}
+	}
+
+	class QueryEngineQA {
+		constructor( sources ) {
+			this.sources = sources;
+			this.owner = '';
+			this.path = 'blocks'
+			this.queries = [];
+
+		}
+
+		addSource( source ) {
+			this.sources = { ...this.sources, source }
+			return this;
+		}
+
+		setOwner( owner ) {
+			this.owner = owner;
+			return this;
+		}
+
+		setPath( path ) {
+			this.path = path;
+			return this;
+		}
+
+		addQuery(query) {
+			this.queries.push(
+				{
+					...query,
+					metadata: {
+						sources: this.sources,
+						owner: this.owner,
+						path: this.path
+					}
+				}
+			);
+			return this;
+		}
+
+		reuseQuery() {
+			if( this.queries.length > 0 ) {
+				const reusedQ = {...this.queries[ this.queries.length - 1 ]};
+				lastQuery.metadata = {
+					sources: this.sources,
+					owner: this.owner,
+					path: this.path
+				}
+				this.queries.push(reusedQ)
 			}
+
+			return this;
+		}
+
+		build( array = false ) {	
+			if( this.queries.length === 1 && ( ! array ) ) {
+				return (new QueryRunner(this.queries.pop()));
+			} else if( this.queries.length > 0 ) {
+				const runners = this.queries.map( query => {
+					return (new QueryRunner( query ));
+				} )
+				return {
+					runners,
+					run() {
+						runners.forEach( runner => runner?.run() )
+					}
+				}
+			}
+		}
+
 	}
 	console.log("Query Engine Script Loaded")
 	const global = window || globalThis;
