@@ -1,15 +1,28 @@
 {
-	"blocks":  [
-		"about-author",
-		"accordion",
-		"advanced-heading",
-		"businnes-hours",
-		"button-group",
-		"circle-counter",
-		"countdown",
-		"flip",
-		"leaflet-map",
-		"progress-bar",
-		"tabs"
-	]
+  "blocks": [
+    "about-author",
+    "accordion",
+    "advanced-heading",
+    "business-hours",
+    "button-group",
+    "circle-counter",
+    "countdown",
+    "flip",
+    "leaflet-map",
+    "progress-bar",
+    "tabs"
+  ],
+  "plugins": [
+    "sticky"
+  ],
+  "templates": [
+    {
+      "name": "summer-breeze",
+      "blocks": [
+        "section",
+        "tabs",
+        "flip"
+      ]
+    }
+  ]
 }
