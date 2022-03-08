@@ -16,8 +16,9 @@
       gap: 5px;
     }
 
-    input {
+    #queryInput {
       flex-grow: 2;
+      min-height: 150px;
     }
 
 
@@ -83,10 +84,11 @@
 <body>
 
 <div class="field">
-  <button class="button-4">
+  <button id="sendMessage" class="button-4">
     Run
   </button>
-  <input />
+  <textarea id="queryInput">
+  </textarea>
   <button class="button-4">
     Run
   </button>
@@ -106,6 +108,7 @@
     </div>
   </div>
 </div>
-
+<script src="popup.js"></script>
+<script src="../queryEngine.js"></script>
 </body>
 </html>

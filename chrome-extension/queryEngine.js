@@ -7,6 +7,10 @@ const REGISTERED_SOURCES = {
 			this.query = query;
 		}
 
+		lazy() {
+			return () => { this.run() }
+		}
+
 		async run() {
 			if( this.query === undefined ) {
 				console.warn("The query is empty!");
@@ -43,7 +47,7 @@ const REGISTERED_SOURCES = {
 						return true;
 					}
 
-					// If include doesn't have a value, then all the blocks that are not excluded are valid 
+					// If include doesn't have a value, then all the blocks that are not excluded are valid
 					return blocks?.include === undefined;
 				})
 
@@ -61,18 +65,18 @@ const REGISTERED_SOURCES = {
 									'Accept': 'application/json'
 								}
 							})
-							.then((res)=>{ 
-									if(res.ok) return res.json(); 
-									else throw new Error("Status code error :" + res.status) 
+							.then((res)=>{
+									if(res.ok) return res.json();
+									else throw new Error("Status code error :" + res.status)
 							})
 							.then(data=>resolve(data))
 							.catch(error=>reject(error))
 						}, Math.floor(Math.random() * 10) * 10);
-						
+
 					})
 				})
-				
-				
+
+
 			Promise.all(blocksContent)
 				.then( ( templates ) => {
 					console.log(`Loaded: ${templates?.length} blocks!`)
@@ -92,7 +96,7 @@ const REGISTERED_SOURCES = {
 	class QueryEngineQA {
 		constructor( sources ) {
 			this.sources = sources;
-			this.owner = '';
+			this.owner = 'robert';
 			this.path = 'blocks'
 			this.queries = [];
 
@@ -116,12 +120,12 @@ const REGISTERED_SOURCES = {
 		addQuery(query) {
 			this.queries.push(
 				{
-					...query,
 					metadata: {
 						sources: this.sources,
 						owner: this.owner,
 						path: this.path
-					}
+					},
+					...query
 				}
 			);
 			return this;
@@ -141,7 +145,7 @@ const REGISTERED_SOURCES = {
 			return this;
 		}
 
-		build( array = false ) {	
+		build( array = false ) {
 			if( this.queries.length === 1 && ( ! array ) ) {
 				return (new QueryRunner(this.queries.pop()));
 			} else if( this.queries.length > 0 ) {
