@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:group -->\n<div class=\"wp-block-group\"><!-- wp:paragraph -->\n<p><o-anim-count>10.000</o-anim-count></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"o-count-delay-3s o-count-slower\"} -->\n<p class=\"o-count-delay-3s o-count-slower\"><o-anim-count>30,00</o-anim-count></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>-<o-anim-count>20</o-anim-count></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"o-count-delay-200ms o-count-fast\"} -->\n<p class=\"o-count-delay-200ms o-count-fast\"><o-anim-count>1,000,000</o-anim-count></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"o-count-faster\"} -->\n<p class=\"o-count-faster\"><o-anim-count>1,000,000.23</o-anim-count></p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph -->\n<p>+<o-anim-count>32.3</o-anim-count>%</p>\n<!-- /wp:paragraph -->\n\n<!-- wp:paragraph {\"className\":\"o-count-delay-100ms o-count-slow\"} -->\n<p class=\"o-count-delay-100ms o-count-slow\">-<o-anim-count>33.28</o-anim-count>$</p>\n<!-- /wp:paragraph --></div>\n<!-- /wp:group -->"
+}
