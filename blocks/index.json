@@ -13,7 +13,8 @@
     "tabs"
   ],
   "plugins": [
-    "sticky"
+    "sticky",
+    "count"
   ],
   "templates": [
     {
