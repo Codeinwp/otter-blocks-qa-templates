@@ -46,20 +46,20 @@ class QueryRunner {
     getTemplates(templates) {
 
         return templates.filter(template => {
-            if (this.query?.use?.includes(template?.name)) {
+            if (this.query?.templates?.use?.includes(template?.name)) {
                 return true;
             }
 
-            if (this.query?.with && this.query?.mode === "all" && this.query?.templates?.has?.every(blockSlug => template?.blocks?.includes(blockSlug))) {
+            if (this.query?.templates?.with !== undefined && this.query?.templates?.mode === "all" && this.query?.templates?.with?.every(blockSlug => template?.blocks?.includes(blockSlug))) {
                 return true;
             }
 
-            if (this.query?.with && this.query.mode === undefined && this.query?.mode === "some" && this.query?.templates?.has?.every(blockSlug => template?.blocks?.includes(blockSlug))) {
+            if (this.query?.templates?.with !== undefined && (this.query?.templates?.mode === undefined || this.query?.mode === "some") && this.query?.templates?.with?.every(blockSlug => template?.blocks?.includes(blockSlug))) {
                 return true;
             }
 
             return false;
-        })
+        }).map( template => template.name )
     }
 
 
