@@ -218,10 +218,16 @@ class QueryEngineQA {
 
 }
 
+
+
+//**************************************** */
+
+
 function injectQueryEngine() {
     console.log("Query Engine Script Loaded")
     const global = window || globalThis;
     global.QueryEngineQA = QueryEngineQA;
+    // global.QueryQA = QueryQA;
     global.qaOtter = (new QueryEngineQA(REGISTERED_SOURCES)).setOwner("robert")
 }
 

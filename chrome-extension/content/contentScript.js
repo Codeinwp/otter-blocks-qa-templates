@@ -7,10 +7,12 @@ window.addEventListener('load', (event) => {
     const settingsBar = document.querySelector("#editor div.edit-post-header__settings")
     if( settingsBar ) {
         var s = document.createElement('script');
-        s.src = chrome.runtime.getURL('queryEngine.js');
+        s.type = "module";
+        s.src = "https://cdn.jsdelivr.net/gh/Soare-Robert-Daniel/otter-query-engine@master/dist/index.js";
         (document.head||document.documentElement).appendChild(s);
+        console.log(s)
         s.onload = function() {
-            s.parentNode.removeChild(s);
+           //  s.parentNode.removeChild(s);
         };
 
         console.log(settingsBar)
@@ -19,21 +21,3 @@ window.addEventListener('load', (event) => {
         settingsBar.appendChild(btn)
     }
 });
-
-
-
-
-
-// function runQuery(query) {
-//     console.log( "Received query from extension:" + query, window.qaOtter)
-//     window?.qaOtter?.addQuery(query)
-// }
-//
-// chrome.runtime.onMessage.addListener(
-//     function(request, sender, sendResponse) {
-//         if (request.query) {
-//             runQuery(request.query)
-//             sendResponse({status: "done"});
-//         }
-//     }
-// );
