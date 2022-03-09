@@ -25,5 +25,91 @@
         "flip"
       ]
     }
+  ],
+  "files": [
+    {
+      "name": "about-author",
+      "has": {
+        "blocks": ["about-author"]
+      }
+    },
+    {
+      "name": "accordion",
+      "has": {
+        "blocks": ["accordion"]
+      }
+    },
+    {
+      "name": "advanced-heading",
+      "has": {
+        "blocks": ["advanced-heading"]
+      }
+    },
+    {
+      "name": "business-hours",
+      "has": {
+        "blocks": ["business-hours"]
+      }
+    },
+    {
+      "name": "button-group",
+      "has": {
+        "blocks": ["button-group"]
+      }
+    },
+    {
+      "name": "circle-counter",
+      "has": {
+        "blocks": ["circle-counter"]
+      }
+    },
+    {
+      "name": "countdown",
+      "has": {
+        "blocks": ["countdown"]
+      }
+    },
+    {
+      "name": "flip",
+      "has": {
+        "blocks": ["flip"]
+      }
+    },
+    {
+      "name": "leaflet-map",
+      "has": {
+        "blocks": ["leaflet-map"]
+      }
+    },
+    {
+      "name": "progress-bar",
+      "has": {
+        "blocks": ["progress-bar"]
+      }
+    },
+    {
+      "name": "tabs",
+      "has": {
+        "blocks": ["tabs"]
+      }
+    },
+    {
+      "name": "sticky",
+      "has": {
+        "plugins": ["sticky"]
+      }
+    },
+    {
+      "name": "count",
+      "has": {
+        "plugins": ["count"]
+      }
+    },
+    {
+      "name": "summer-breeze",
+      "has": {
+        "blocks": ["section", "tabs", "flip"]
+      }
+    }
   ]
 }
