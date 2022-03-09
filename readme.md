@@ -3,42 +3,11 @@
 
 ## Getting started
 
-This is chrome browser extension. You can add the folder `chrome-extension` via [Developer Mode](https://developer.chrome.com/docs/extensions/mv3/faq/#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension,%20and%20more.)
+Use together with [Query Engine](https://github.com/Soare-Robert-Daniel/otter-query-engine)
 
-The interface is WIP. But you can use the Query Engine via Console. Go to Console via `Inspect` and run a query like this:
+You can use the chrome browser extension to add the script in every page. You can add the folder `chrome-extension` via [Developer Mode](https://developer.chrome.com/docs/extensions/mv3/faq/#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension,%20and%20more.)
 
-Insert a Flip block.
-```javascript
-qaOtter.addQuery({ blocks: { include: ['flip'] } }).build().run()
-```
+## Concepts
 
-Insert all the blocks, except the Flip block.
-```javascript
-qaOtter.addQuery({ blocks: { exclude: ['flip'] } }).build().run()
-```
+Every folder represent a source/database from which we can get the exported blocks. Every folder that is used a source/database must have `index.json` in which we list the available files and their features. See `blocks/index.json` as example.
 
-Insert all defined blocks from `blocks\index.json`.
-```javascript
-qaOtter.addQuery({ blocks: {} }).build().run()
-``` 
-
-Insert a block with Sticky plugin.
-```javascript
-qaOtter.addQuery({ plugins: { include: ['sticky'] } }).build().run()
-```
-
-Insert all the blocks with the plugins, except the sticky plugin.
-```javascript
-qaOtter.addQuery({ plugins: { exclude: ['sticky'] } }).build().run()
-```
-
-Insert all defined blocks with plugins from `blocks\index.json`.
-```javascript
-qaOtter.addQuery({ plugins: {} }).build().run()
-``` 
-
-Insert all the templates that have the `tabs` block.
-```javascript
-qaOtter.addQuery({ templates: { with: ['tabs'] } }).build().run()
-```
-:information_source: The Query Engine can be used without the extension. Just run the code from `queryEngine.js` in the Console. *You also use [Snippets](https://developer.chrome.com/docs/devtools/javascript/snippets/).*

@@ -83,6 +83,12 @@
       "has": {
         "blocks": ["section", "tabs", "flip"]
       }
+    },
+    {
+      "name": "circle-counter-mix",
+      "has": {
+        "blocks": ["section", "circle-counter"]
+      }
     }
   ]
 }
