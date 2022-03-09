@@ -3,7 +3,7 @@
 
 ## Getting started
 
-This is chrome browser extension. You can add the folder `chrome-extension` this via [Developer Mode](https://developer.chrome.com/docs/extensions/mv3/faq/#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension,%20and%20more.)
+This is chrome browser extension. You can add the folder `chrome-extension` via [Developer Mode](https://developer.chrome.com/docs/extensions/mv3/faq/#:~:text=You%20can%20start%20by%20turning,a%20packaged%20extension,%20and%20more.)
 
 The interface is WIP. But you can use the Query Engine via Console. Go to Console via `Inspect` and run a query like this:
 
