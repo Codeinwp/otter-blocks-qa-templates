@@ -79,6 +79,18 @@
       }
     },
     {
+      "name": "typing",
+      "has": {
+        "plugins": ["typing"]
+      }
+    },
+    {
+      "name": "typing-1",
+      "has": {
+        "plugins": ["typing"]
+      }
+    },
+    {
       "name": "summer-breeze",
       "has": {
         "blocks": ["section", "tabs", "flip"]
