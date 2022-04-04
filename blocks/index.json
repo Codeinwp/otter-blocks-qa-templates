@@ -79,6 +79,13 @@
       }
     },
     {
+      "name": "lottie-sticky",
+      "has": {
+        "blocks": ["lottie"],
+        "plugins": ["sticky"]
+      }
+    },
+    {
       "name": "typing",
       "has": {
         "plugins": ["typing"]
