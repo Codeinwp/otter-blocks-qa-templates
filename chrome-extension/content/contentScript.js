@@ -8,6 +8,7 @@ window.addEventListener('load', (event) => {
     if( settingsBar ) {
         var s = document.createElement('script');
         s.defer = true;
+        s.type = "module"
         s.src = "https://cdn.jsdelivr.net/gh/Codeinwp/otter-query-engine@master/dist/index.js";
         (document.head||document.documentElement).appendChild(s);
         console.log(s)
