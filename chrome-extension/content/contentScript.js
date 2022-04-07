@@ -7,7 +7,7 @@ window.addEventListener('load', (event) => {
     const settingsBar = document.querySelector("#editor div.edit-post-header__settings")
     if( settingsBar ) {
         var s = document.createElement('script');
-        s.type = "module";
+        s.defer = true;
         s.src = "https://cdn.jsdelivr.net/gh/Codeinwp/otter-query-engine@master/dist/index.js";
         (document.head||document.documentElement).appendChild(s);
         console.log(s)
