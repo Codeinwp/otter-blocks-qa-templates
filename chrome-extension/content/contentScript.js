@@ -14,11 +14,10 @@ window.addEventListener('load', (event) => {
         console.log(s)
         s.onload = function() {
            //  s.parentNode.removeChild(s);
+           const btn = document.createElement('span')
+           btn.innerText = "Query Engine Active"
+           settingsBar.insertBefore(btn, settingsBar.firstChild)
+           
         };
-
-        console.log(settingsBar)
-        const btn = document.createElement('button')
-        btn.innerText = "QA"
-        settingsBar.appendChild(btn)
     }
 });
