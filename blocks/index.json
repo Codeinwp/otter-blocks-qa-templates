@@ -80,18 +80,19 @@
     },
     {
       "name": "lottie-sticky",
+      "comment": "Test if the stick block is activated after the lottie animations are loaded.",
       "has": {
         "blocks": ["lottie"],
         "plugins": ["sticky"],
-        "comment": "Test if the stick block is activated after the lottie animations are loaded."
+
       }
     },
     {
       "name": "tabs-sticky",
+      "comment": "Test if sticky change the trigger limit when the tabs blocks has different heights on each tab.",
       "has": {
         "blocks": ["tabs"],
         "plugins": ["sticky"],
-        "comment": "Test if sticky change the trigger limit when the tabs blocks has different heights on each tab."
       }
     },
     {
@@ -110,6 +111,13 @@
       "name": "circle-counter-mix",
       "has": {
         "blocks": ["section", "circle-counter"]
+      }
+    },
+    {
+      "name": "reusable-block-id-bug",
+      "comment": "Test if the page freeze when inserting or modifying duplicated reusable block made from this block. #869",
+      "has": {
+        "blocks": ["lottie", "countdown", "tabs", "accordion", "progress-bar", "circle-counter", "leaflet"]
       }
     }
   ]
