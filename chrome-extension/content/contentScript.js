@@ -9,11 +9,6 @@ window.addEventListener('load', (event) => {
             s.type = "module";
             s.src = "https://cdn.jsdelivr.net/gh/Codeinwp/otter-query-engine@master/dist/index.js";
             (document.head||document.documentElement).appendChild(s);
-            console.log(s)
-            s.onload = function() {
-            //  s.parentNode.removeChild(s);
-            
-            };
             clearInterval(interv);
         }
         if(count > 6) {

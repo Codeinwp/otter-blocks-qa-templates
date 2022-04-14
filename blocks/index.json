@@ -84,7 +84,6 @@
       "has": {
         "blocks": ["lottie"],
         "plugins": ["sticky"]
-
       }
     },
     {
