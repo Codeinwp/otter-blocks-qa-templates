@@ -83,7 +83,7 @@
       "comment": "Test if the stick block is activated after the lottie animations are loaded.",
       "has": {
         "blocks": ["lottie"],
-        "plugins": ["sticky"],
+        "plugins": ["sticky"]
 
       }
     },
@@ -92,7 +92,7 @@
       "comment": "Test if sticky change the trigger limit when the tabs blocks has different heights on each tab.",
       "has": {
         "blocks": ["tabs"],
-        "plugins": ["sticky"],
+        "plugins": ["sticky"]
       }
     },
     {
