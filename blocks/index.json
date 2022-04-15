@@ -126,6 +126,14 @@
         "blocks": ["form"]
       },
       "version": "2.0.3"
+    },
+    {
+      "name": "form-new-2",
+      "comment": "Test the refactor from #797 with different block",
+      "has": {
+        "blocks": ["form", "tabs", "accordion"]
+      },
+      "version": "2.0.3"
     }
   ]
 }
