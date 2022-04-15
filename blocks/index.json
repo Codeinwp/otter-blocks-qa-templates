@@ -120,6 +120,14 @@
       }
     },
     {
+      "name": "form-legacy",
+      "comment": "Test the legacy version for migration in #797",
+      "has": {
+        "blocks": ["form"]
+      },
+      "version": "2.0.0"
+    },
+    {
       "name": "form-new-1",
       "comment": "Test the refactor from #797",
       "has": {
