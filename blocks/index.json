@@ -150,6 +150,11 @@
         "blocks": ["section"]
       },
       "version": "2.0.3"
+    },
+    {
+      "name": "frontend-script-dependency-check",
+      "comment": "Test if we load unwanted script in our frontend scripts. No blocks specification, this is a special case, use only by name",
+      "version": "2.0.3"
     }
   ]
 }
