@@ -155,6 +155,11 @@
       "name": "frontend-script-dependency-check",
       "comment": "Test if we load unwanted script in our frontend scripts. No blocks specification, this is a special case, use only by name",
       "version": "2.0.3"
+    },
+    {
+      "name": "fa-icons",
+      "comment": "Test to check if the FA icons have the same box size.",
+      "version": "2.0.3"
     }
   ]
 }

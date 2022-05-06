@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:themeisle-blocks/font-awesome-icons {\"id\":\"wp-block-themeisle-blocks-font-awesome-icons-8392daf2\",\"prefix\":\"fas\",\"icon\":\"seedling\",\"fontSize\":39,\"padding\":10,\"backgroundColor\":\"violet\",\"textColor\":\"blue\",\"borderColor\":\"red\",\"borderSize\":4,\"borderRadius\":70} -->\n<p id=\"wp-block-themeisle-blocks-font-awesome-icons-8392daf2\" class=\"wp-block-themeisle-blocks-font-awesome-icons\"><span class=\"wp-block-themeisle-blocks-font-awesome-icons-container\"><i class=\"fas fa-seedling\"></i></span></p>\n<!-- /wp:themeisle-blocks/font-awesome-icons -->"
+}
