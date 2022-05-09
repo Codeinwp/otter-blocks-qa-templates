@@ -9,7 +9,9 @@ You can use the chrome browser extension to add the script in every page. You ca
 
 ## Concepts
 
-Every folder represent a source/database from which we can get the exported blocks. Every folder that is used a source/database must have `index.json` in which we list the available files and their features. See `blocks/index.json` as example.
+Every folder in the `blocks` represent a source/database from which we can get the exported blocks. Every folder that is used a source/database must have `index.json` in which we list the available files and their features. See `blocks/index.json` as example.
+
+The folders `sites` will contain exported sites, which will help to test mode advance blocks like Posts, Comparison Review.
 
 ## Chrome Extension Install
 
