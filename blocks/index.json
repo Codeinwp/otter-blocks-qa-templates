@@ -3,127 +3,180 @@
     {
       "name": "about-author",
       "has": {
-        "blocks": ["about-author"]
+        "blocks": [
+          "about-author"
+        ]
       }
     },
     {
       "name": "accordion",
       "has": {
-        "blocks": ["accordion"]
+        "blocks": [
+          "accordion"
+        ]
       }
     },
     {
       "name": "advanced-heading",
       "has": {
-        "blocks": ["advanced-heading"]
+        "blocks": [
+          "advanced-heading"
+        ]
       }
     },
     {
       "name": "business-hours",
       "has": {
-        "blocks": ["business-hours"]
+        "blocks": [
+          "business-hours"
+        ]
       }
     },
     {
       "name": "button-group",
       "has": {
-        "blocks": ["button-group"]
+        "blocks": [
+          "button-group"
+        ]
       }
     },
     {
       "name": "circle-counter",
       "has": {
-        "blocks": ["circle-counter"]
+        "blocks": [
+          "circle-counter"
+        ]
       }
     },
     {
       "name": "countdown",
       "has": {
-        "blocks": ["countdown"]
+        "blocks": [
+          "countdown"
+        ]
       }
     },
     {
       "name": "flip",
       "has": {
-        "blocks": ["flip"]
+        "blocks": [
+          "flip"
+        ]
       }
     },
     {
       "name": "leaflet-map",
       "has": {
-        "blocks": ["leaflet-map"]
+        "blocks": [
+          "leaflet-map"
+        ]
       }
     },
     {
       "name": "progress-bar",
       "has": {
-        "blocks": ["progress-bar"]
+        "blocks": [
+          "progress-bar"
+        ]
       }
     },
     {
       "name": "tabs",
       "has": {
-        "blocks": ["tabs"]
+        "blocks": [
+          "tabs"
+        ]
       }
     },
     {
       "name": "sticky",
       "has": {
-        "plugins": ["sticky"]
+        "plugins": [
+          "sticky"
+        ]
       }
     },
     {
       "name": "count",
       "has": {
-        "plugins": ["count"]
+        "plugins": [
+          "count"
+        ]
       }
     },
     {
       "name": "lottie-sticky",
       "comment": "Test if the stick block is activated after the lottie animations are loaded.",
       "has": {
-        "blocks": ["lottie"],
-        "plugins": ["sticky"]
+        "blocks": [
+          "lottie"
+        ],
+        "plugins": [
+          "sticky"
+        ]
       }
     },
     {
       "name": "tabs-sticky",
       "comment": "Test if sticky change the trigger limit when the tabs blocks has different heights on each tab.",
       "has": {
-        "blocks": ["tabs"],
-        "plugins": ["sticky"]
+        "blocks": [
+          "tabs"
+        ],
+        "plugins": [
+          "sticky"
+        ]
       }
     },
     {
       "name": "typing",
       "has": {
-        "plugins": ["typing"]
+        "plugins": [
+          "typing"
+        ]
       }
     },
     {
       "name": "summer-breeze",
       "has": {
-        "blocks": ["section", "tabs", "flip"]
+        "blocks": [
+          "section",
+          "tabs",
+          "flip"
+        ]
       }
     },
     {
       "name": "circle-counter-mix",
       "has": {
-        "blocks": ["section", "circle-counter"]
+        "blocks": [
+          "section",
+          "circle-counter"
+        ]
       }
     },
     {
       "name": "reusable-block-id-bug",
       "comment": "Test if the page freeze when inserting or modifying duplicated reusable block made from this block. #869",
       "has": {
-        "blocks": ["lottie", "countdown", "tabs", "accordion", "progress-bar", "circle-counter", "leaflet"]
+        "blocks": [
+          "lottie",
+          "countdown",
+          "tabs",
+          "accordion",
+          "progress-bar",
+          "circle-counter",
+          "leaflet"
+        ]
       }
     },
     {
       "name": "form-legacy",
       "comment": "Test the legacy version for migration in #797",
       "has": {
-        "blocks": ["form"]
+        "blocks": [
+          "form"
+        ]
       },
       "version": "2.0.0"
     },
@@ -131,7 +184,9 @@
       "name": "form-new-1",
       "comment": "Test the refactor from #797",
       "has": {
-        "blocks": ["form"]
+        "blocks": [
+          "form"
+        ]
       },
       "version": "2.0.3"
     },
@@ -139,7 +194,11 @@
       "name": "form-new-2",
       "comment": "Test the refactor from #797 with different block",
       "has": {
-        "blocks": ["form", "tabs", "accordion"]
+        "blocks": [
+          "form",
+          "tabs",
+          "accordion"
+        ]
       },
       "version": "2.0.3"
     },
@@ -147,7 +206,9 @@
       "name": "one-column-section",
       "comment": "Test if max-width is ignored for sections with one column",
       "has": {
-        "blocks": ["section"]
+        "blocks": [
+          "section"
+        ]
       },
       "version": "2.0.3"
     },
@@ -160,6 +221,22 @@
       "name": "fa-icons",
       "comment": "Test to check if the FA icons have the same box size.",
       "version": "2.0.3"
+    },
+    {
+      "name": "hot-summer",
+      "comment": "Big test for section, accordion, tabs & others.",
+      "version": "2.0.8",
+      "has": {
+        "blocks": [
+          "countdown",
+          "tabs",
+          "accordion",
+          "progress-bar",
+          "circle-counter",
+          "icons",
+          "section"
+        ]
+      }
     }
   ]
 }
