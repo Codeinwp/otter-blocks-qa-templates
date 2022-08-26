@@ -237,6 +237,17 @@
           "section"
         ]
       }
+    },
+    {
+      "name": "icon-alignment-responsive-control",
+      "comment": "Test new icon enhancement and responsive functions.",
+      "version": "2.0.13",
+      "has": {
+        "blocks": [
+          "icons",
+          "countdown"
+        ]
+      }
     }
   ]
 }
