@@ -248,6 +248,16 @@
           "countdown"
         ]
       }
+    },
+    {
+      "name": "new-countdown-with-end-actions",
+      "comment": "Test the new enhancement for Countdown Block.",
+      "version": "2.0.15",
+      "has": {
+        "blocks": [
+          "countdown"
+        ]
+      }
     }
   ]
 }
