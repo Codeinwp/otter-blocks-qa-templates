@@ -13,15 +13,17 @@ Every folder in the `blocks` represent a source/database from which we can get t
 
 The folders `sites` will contain exported sites, which will help to test mode advance blocks like Posts, Comparison Review.
 
-## Chrome Extension Install
-
 ## Offline support
+
+We can host this folder to localhost on port 8085. When using the Query Engine, use `offline` as source.s
 
 Docker
 
 ```bash
 docker run -d -v "$PWD:/web" -p 8085:8080 halverneus/static-file-server:latest
 ```
+
+## Chrome Extension Instally
 
 #### Steps
 
