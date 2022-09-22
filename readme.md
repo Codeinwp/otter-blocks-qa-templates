@@ -15,7 +15,7 @@ The folders `sites` will contain exported sites, which will help to test mode ad
 
 ## Offline support
 
-We can host this folder to localhost on port 8085. When using the Query Engine, use `offline` as source.s
+We can host this folder to localhost on port 8085. When using the Query Engine, set `offline` as source.
 
 Docker
 
