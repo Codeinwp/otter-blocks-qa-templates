@@ -15,6 +15,14 @@ The folders `sites` will contain exported sites, which will help to test mode ad
 
 ## Chrome Extension Install
 
+## Offline support
+
+Docker
+
+```bash
+docker run -d -v "$PWD:/web" -p 8085:8080 halverneus/static-file-server:latest
+```
+
 #### Steps
 
 1. Enable developer mode in **Tools > Extensions**. The toggle is in the top-right corner.  
