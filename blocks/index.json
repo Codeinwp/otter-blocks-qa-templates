@@ -258,6 +258,16 @@
           "countdown"
         ]
       }
+    },
+    {
+      "name": "copy-paste-template-1",
+      "comment": "Template for testing Copy Paste plugin",
+      "version": "2.0.16",
+      "has": {
+        "plugins": [
+          "copy-paste"
+        ]
+      }
     }
   ]
 }
