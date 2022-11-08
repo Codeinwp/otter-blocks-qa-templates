@@ -1,0 +1,5 @@
+{
+  "__file": "wp_export",
+  "version": 2,
+  "content": "<!-- wp:themeisle-blocks/advanced-heading {\"id\":\"wp-block-themeisle-blocks-advanced-heading-888d2c2c\",\"alignTablet\":\"center\",\"alignMobile\":\"right\",\"headingColor\":\"var(\\u002d\\u002dnv-c-2)\",\"highlightColor\":\"var(\\u002d\\u002dnv-dark-bg)\",\"highlightBackground\":\"#fff200\",\"fontSize\":142,\"fontSizeTablet\":79.8,\"fontSizeMobile\":24.3,\"lineHeight\":0.8,\"letterSpacing\":13.5,\"paddingTypeTablet\":\"unlinked\",\"paddingTypeMobile\":\"unlinked\",\"padding\":50,\"paddingTopTablet\":30,\"paddingTopMobile\":1,\"paddingRightTablet\":10,\"paddingRightMobile\":1,\"paddingBottomTablet\":10,\"paddingBottomMobile\":1,\"paddingLeftTablet\":30,\"paddingLeftMobile\":1,\"marginType\":\"linked\",\"margin\":25,\"marginTopTablet\":20,\"marginTopMobile\":10,\"marginBottomTablet\":45,\"marginBottomMobile\":10} -->\n<h2 id=\"wp-block-themeisle-blocks-advanced-heading-888d2c2c\" class=\"wp-block-themeisle-blocks-advanced-heading wp-block-themeisle-blocks-advanced-heading-888d2c2c\">Title 1 <span class=\"highlight\">Heading</span></h2>\n<!-- /wp:themeisle-blocks/advanced-heading -->"
+}
